@@ -22,7 +22,7 @@ export default function Home() {
         </h1>
         <h1>I am Pragnan Kasarla</h1>
         <h1 class="gradient-text-contact">I am a Web Developer</h1>
-        <a href="https://drive.google.com/file/d/1dZ1r9KD9-wcYyOSsZNtHIwlCPQ1ZDWL5/view?usp=drive_link">
+        <a href="https://drive.google.com/file/d/1dZ1r9KD9-wcYyOSsZNtHIwlCPQ1ZDWL5/view?usp=drive_link" target="_blank">
           
           <button className="rbutton">Resume</button>
         </a>
