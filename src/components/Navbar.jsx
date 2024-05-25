@@ -4,7 +4,7 @@ export default function Navbar() {
   return (
     <div
     className="NavbarDiv"
-    
+    style={{zIndex:"1000"}}
     >
       <a href="/">
         <img
