@@ -9,6 +9,7 @@ function App() {
   return (
     <>
     <center>
+      <Analytics></Analytics>
     <Navbar></Navbar>
     <div className="content">
     <Home/>
