@@ -10,9 +10,10 @@ export default function Projects() {
       <div
         className="cards"
       >
-        <Project name={"REAL ESTATE"} tech={["REACT","MongoDB","NODE"]} git={"https://github.com/TheSecondBread/RentEase"} live={"https://rent-ease-gamma.vercel.app/"}></Project>
+        <Project name={"BLOGIFY"} tech={["REACT","NODEJS","MONGODB"]} git={"https://github.com/TheSecondBread/blog"} live={"https://blog-coral-tau-75.vercel.app/"}></Project>
+        <Project name={"REAL ESTATE"} tech={["REACT","MONGODB","NODEJS"]} git={"https://github.com/TheSecondBread/RentEase"} live={"https://rent-ease-gamma.vercel.app/"}></Project>
         <Project name={"PORTFOLIO"}  tech={["HTML","CSS","REACT"]} git={"https://github.com/TheSecondBread/portfolio"} live={"https://pragnan.vercel.app/"}></Project>
-        <Project name={"URL SHORTENER"} tech={["REACT","JAVA SPRING","POSTGRESQL"]} git={"https://github.com/TheSecondBread/url-shortener-frontend"} live={"https://url-shortener-frontend-tau.vercel.app/"}></Project>
+        
         
       </div>
     </div>
