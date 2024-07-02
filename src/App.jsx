@@ -1,27 +1,23 @@
-import "./App.css";
-import Navbar from "./components/Navbar";
-import Home from "./components/Home";
-import About from "./components/About";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
-import { Analytics } from "@vercel/analytics/react"
-function App() {
-  return (
-    <>
-    <center>
-      <Analytics></Analytics>
-    <Navbar></Navbar>
-    <div className="content">
-    <Home/>
-    <About/>
+import { useState } from 'react'
+import './App.css'
+import Navbar from './components/Nav'
+import Home from './components/Home'
+import About from './components/About'
+import Projects from './components/Projects'
+import Contact from './components/Contact'
 
-    <Projects></Projects>
+function App() {
+  const [count, setCount] = useState(0)
+
+  return (
+    <div>
+    <Navbar></Navbar>
+    <Home></Home>
+    <About></About>
+    <Projects/>
     <Contact></Contact>
     </div>
-    </center>
-
-    </>
-  );
+  )
 }
 
-export default App;
+export default App

@@ -1,39 +1,31 @@
 import React from "react";
 
-export default function Project({name,tech,git,live}) {
-  console.log(tech)
-  
+export default function Project({ name, tech, git, live,des,imgs }) {
   return (
-    <div className="pbox" style={{ placeContent: "center", color:"white" }}>
-      <div
-        style={{ width: "380px", height: "250px"}}
-      >
-        <div style={{gap:"15px",display:"flex",marginTop:"1rem",marginLeft:"18rem"}}>
-          <a href={git} target="_blank"> 
-          <img
-            src="/github-mark-white.png"
-            style={{ width: "28px", height: "28px" }}
-          />
-          </a>
-          <a href={live} target="_blank">
-          <img
-            src="/icons8-next-50.png"
-            style={{ width: "27px", height: "29px",zIndex:"1000px" }}
-          />
-          </a>
+    <a href={git}>
+    <div className="max-w-sm mx-auto bg-black text-white shadow-md overflow-hidden md:max-w-2xl rounded-lg" style={{ maxWidth: "calc(100% - 20px) " }}>
+      <div>
+        <img className="w-full object-cover" src={imgs} alt="Mentor Labs" />
+      </div>
+      <div className="p-6">
+        <h2 className="uppercase tracking-wide text-sm text-indigo-400 font-semibold">{name}</h2>
+        <p className="mt-2 text-lg font-medium">
+          {des}
+        </p>
+        <div className="mt-4">
+          {tech.map((techItem, index) => (
+            <span key={index} className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm font-semibold text-gray-400 mr-2 mt-1">
+              {techItem}
+            </span>
+          ))}
         </div>
-        <div style={{marginTop:"3rem"}}>
-          <h3>{name}</h3>
-          <div style={{display:"flex",justifyContent:"center",gap:"1rem",fontFamily:"roboto"}}>
-          {tech != undefined ? tech.map((b)=>(
-             <h4 key={b}>{b}</h4>
-          )): <h3>CURRENT</h3>
-          }
-
-          </div>
-          
+        <div className="mt-4">
+          <a href={git}>
+          <img className="h-6 w-6" src="/github-mark-white.png" alt="GitHub" />
+          </a>
         </div>
       </div>
     </div>
+    </a>
   );
 }

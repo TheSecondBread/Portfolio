@@ -1,59 +1,243 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-  color-scheme: black;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: black;
+/* Ensure this comes after importing tailwindcss */
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-a {
-  font-weight: 500;
-  color: white;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #646cff;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 2px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: white;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+.gradient-text-contact {
+    font-weight: bold;
+    background: linear-gradient(to left, #ef406f,
+        #d445de,
+        #97b5da,
+        #04c0fe);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-clip: text;
   }
-  a:hover {
-    color: #747bff;
+  .rbutton {
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 12px 25px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #725AC1;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #725AC1;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #725AC1;
+    font-family: serif;
   }
-  button {
-    background-color: #f9f9f9;
+  .rbutton:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 0 #725AC1;
   }
-}
+  
+  .rbutton:active {
+    transform: scale(0.9);
+  }  
+
+  .gradient-text-about {
+    background: linear-gradient(to left, #36c9f1, #0017e2);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-clip: text;
+  }
+  
+
+  .techstack-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 40vw;
+    gap: 35px;
+    justify-content: center;
+    align-content: center;
+  
+  }
+  
+  .techstack {
+    margin-top: 15px;
+    height: 45px;
+    width: 45px;
+    object-fit: contain;
+    padding: 20px;
+    border-radius: 36px;
+    width: 100px;
+    height: 100px;
+    background: rgb(255, 255, 255);
+    /* transform: translateY(0px); */
+    box-sizing: border-box;
+    animation: float 3s ease-in-out infinite;
+  
+  }
+  
+  @keyframes float {
+  
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+  
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  
+  
+  @keyframes loadAnimation {
+    0% {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes loadAnimationb {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  body {
+    background: black;
+  }
+
+  .gradient-text-contact {
+    font-size: 54px;
+    font-weight: bold;
+    background: linear-gradient(to left, #ef406f,
+        #d445de,
+        #97b5da,
+        #04c0fe);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-clip: text;
+  }
+
+  .ani {
+    overflow: hidden;
+    border-right: .15em solid #d035b1;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 2s steps(20, end) infinite alternate;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  
+    to {
+      width: 30%
+    }
+  }
+
+
+
+  .button-64 {
+    align-items: center;
+    background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-family: Phantomsans, sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 3px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+  
+  .button-64:active,
+  .button-64:hover {
+    outline: 0;
+  }
+  
+  .button-64 span {
+    background-color: rgb(5, 6, 45);
+    padding: 16px 24px;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+  }
+  
+  .button-64:hover span {
+    background: none;
+  }
+  
+  @media (min-width: 768px) {
+    .button-64 {
+      font-size: 24px;
+      min-width: 196px;
+    }
+  }
+  @layer reset-tw {
+    /* This layer is disabled */
+    @variants {
+      .reset-tw,
+      .reset-tw * {
+          all: revert !important;
+      }
+      
+    }
+  }
+  
+  .fade-in {
+    animation: fadeInUp 1.5s ease-in-out;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px); /* Start 20px below the final position */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* End at the final position */
+    }
+  }
+  .fade-inav {
+    animation: fadeInd 1.5s ease-in-out;
+  }
+  
+  @keyframes fadeInd {
+    from {
+      opacity: 0;
+      transform: translateY(-20px); /* Start 20px below the final position */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* End at the final position */
+    }
+  }
+  
+ 
+  

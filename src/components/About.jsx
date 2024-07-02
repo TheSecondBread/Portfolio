@@ -1,10 +1,11 @@
 import React from "react";
+
 export default function About() {
   return (
-    <div id="about" className="About">
-      <div style={{ marginLeft: "100px", width: "40vw" }}>
-        <h1 className="gradient-text-about">About Me</h1>
-        <h3 style={{ color: "white" }}>
+    <div id="about" className="About bg-black text-white flex flex-col lg:flex-row justify-center items-center font-serif lg:space-x-8 py-8">
+      <div className="w-full lg:w-[90vh] mx-4  flex flex-col justify-center items-center p-4">
+        <h1 className="gradient-text-about font-serif text-[36px] lg:text-[54px] font-bold text-center">About Me</h1>
+        <h3 className="text-[18px] lg:text-[18px] text-center font-semibold ">
           I'm Kasarla Pragnan, a web developer with a focus on both front-end
           development and backend. Currently fueled by a deep passion for the
           web and emerging technologies, I thrive on continuous learning and
@@ -14,16 +15,9 @@ export default function About() {
           intuitive interfaces that meet user expectations.
         </h3>
       </div>
-      <div
-        style={{
-          fontFamily: "sans-serif",
-          width: "40vw",
-          justifyContent: "center",
-          alignContent: "center",
-        }}
-      >
-        <h1 className="gradient-text-about">Tech Stack</h1>
-        <div className="techstack-container">
+      <div className="w-full lg:w-[40vw] mx-4 flex flex-col justify-center items-center p-4">
+        <h1 className="gradient-text-about font-serif text-[36px] lg:text-[54px] font-bold text-center">Tech Stack</h1>
+        <div className="flex flex-wrap gap-4 lg:gap-[35px] justify-center content-center">
           <div className="techstack-box">
             <img className="techstack" src="/html.svg" alt="HTML" />
           </div>
@@ -43,7 +37,7 @@ export default function About() {
             <img className="techstack" src="/mongo.svg" alt="MongoDB" />
           </div>
           <div className="techstack-box">
-            <img className="techstack" src="/my.svg" alt="MongoDB" />
+            <img className="techstack" src="/my.svg" alt="MySQL" />
           </div>
           <div className="techstack-box">
             <img className="techstack" src="/post.svg" alt="PostgreSQL" />
