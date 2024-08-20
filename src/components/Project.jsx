@@ -3,7 +3,7 @@ import React from "react";
 export default function Project({ name, tech, git, live,des,imgs }) {
   return (
     <a href={git}>
-    <div className="max-w-sm mx-auto bg-black text-white shadow-md overflow-hidden md:max-w-2xl rounded-lg" style={{ maxWidth: "calc(100% - 20px) " }}>
+    <div className="max-w-sm mx-auto sm:min-h-[550px] mb-5 bg-black hover:bg-[#141414] text-white shadow-md overflow-hidden md:max-w-2xl rounded-xl" style={{ maxWidth: "calc(100% - 40px) " }}>
       <div>
         <img className="w-full object-cover" src={imgs} alt="Mentor Labs" />
       </div>
@@ -20,7 +20,7 @@ export default function Project({ name, tech, git, live,des,imgs }) {
           ))}
         </div>
         <div className="mt-4">
-          <a href={git}>
+          <a href={git} target="blank">
           <img className="h-6 w-6" src="/github-mark-white.png" alt="GitHub" />
           </a>
         </div>

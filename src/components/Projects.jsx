@@ -7,18 +7,18 @@ export default function Projects() {
       id="projects"
       className="min-h-screen flex flex-col justify-center items-center bg-black text-white p-5 mt-20"
     >
-      <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-10 gradient-text-about">
+      <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-20 gradient-text-about ">
         My Projects
       </h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-10">
         <Project
           name={"CodeIT"}
-          tech={["REACT", "NODEJS", "MONGODB"]}
+          tech={["REACT", "NODEJS", "MONGODB","DOCKER","TailwindCSS"]}
           git={"https://github.com/TheSecondBread"}
           live={"https://blog-coral-tau-75.vercel.app/"}
           des={
-            "A platform which I am currently working on that is similar to Leetcode where users can solve problems and participate in contests"
+            "A programming platform built with the MERN stack, offering coding challenges similar to LeetCode and CodeChef. The platform uses Docker containers to securely execute and evaluate code submissions, ensuring an isolated environment for each user's code."
           }
           imgs={"./projects/code.png"}
         />

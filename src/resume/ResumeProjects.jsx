@@ -9,6 +9,25 @@ function ResumeProjects() {
         <h3 className="project-info text-[20px] font-semibold underline mb-5">
           <a
             className="resume"
+            href="https://github.com/TheSecondBread/CODE.it"
+            target="blank"
+          >
+            CODE.it
+          </a>
+        </h3>
+        <p className="mb-5">
+        A programming platform built with the MERN stack, offering coding challenges similar to LeetCode and CodeChef. 
+        The platform uses Docker containers to securely execute and evaluate code submissions, ensuring an isolated environment for each user's code.
+        </p>
+        <p>
+          <strong>Tech stack:</strong> React, Node.js , MongoDB, Express.js, Docker
+        </p>
+      </div>
+
+      <div className="card mb-5">
+        <h3 className="project-info text-[20px] font-semibold underline mb-5">
+          <a
+            className="resume"
             href="https://github.com/TheSecondBread/BLOG"
             target="blank"
           >

@@ -17,13 +17,16 @@ export default function About() {
       </div>
       <div className="w-full lg:w-[40vw] mx-4 flex flex-col justify-center items-center p-4">
         <h1 className="gradient-text-about font-serif text-[36px] lg:text-[54px] font-bold text-center">Tech Stack</h1>
-        <div className="flex flex-wrap gap-4 lg:gap-[35px] justify-center content-center">
+        <div className="flex flex-wrap gap-4 lg:gap-[35px] justify-center content-center">       
           <div className="techstack-box">
             <img className="techstack" src="/html.svg" alt="HTML" />
           </div>
           <div className="techstack-box">
             <img className="techstack" src="/csss.svg" alt="CSS" />
           </div>
+          <div className="techstack-box">
+            <img className="techstack" src="/tail.svg" alt="TAILWIND" />
+          </div> 
           <div className="techstack-box">
             <img className="techstack" src="/boot.svg" alt="Bootstrap" />
           </div>
@@ -44,6 +47,9 @@ export default function About() {
           </div>
           <div className="techstack-box">
             <img className="techstack" src="/node.svg" alt="Node.js" />
+          </div>
+          <div className="techstack-box">
+            <img className="techstack" src="/docker.svg" alt="DOCKER" />
           </div>
           <div className="techstack-box">
             <img className="techstack" src="/java.svg" alt="Java" />
